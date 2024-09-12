@@ -1,0 +1,116 @@
+/* SERVICE */
+:root {
+  --card-header-color: #fff; /* Light theme header color */
+  --card-text-color: #ddd; /* Light theme text color */
+}
+
+/* Dark theme */
+.dark-mode {
+  --card-header-color: #eee; /* Dark theme header color */
+  --card-text-color: #aaa; /* Dark theme text color */
+}
+
+/* Other styles */
+.card_header {
+  font-weight: bold;
+  font-size: large;
+  color: var(--card-header-color); /* Use variable for header color */
+}
+
+/* Card Text Styling */
+.card_text {
+  text-align: center;
+  color: var(--card-text-color); /* Use variable for text color */
+}
+
+/* Glassmorphism Background with Black Color */
+.serviceContainer {
+  border-radius: 20px; /* Modern border radius */
+  backdrop-filter: blur(15px); /* Increased blur for a pronounced glass effect */
+  padding: 30px; /* Added padding for better spacing */
+  color: white;
+  margin: 0 auto; /* Centering the container */
+  max-width: 1200px; /* Limiting the maximum width */
+  background: rgba(0, 0, 0, 0.85); /* Black background with 85% opacity */
+}
+
+/* Header Styling */
+.service_container h1 {
+  text-align: center;
+  font-size: 2.5rem; /* Increased font size for emphasis */
+  color: #fff; /* White color for contrast against the black background */
+  margin-bottom: 30px; /* Increased margin for spacing */
+}
+  
+/* CSS Grid for Responsive Cards */
+.service_cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+  gap: 20px; /* Space between cards */
+}
+ /* Neumorphic Card Design */
+.service_card {
+  border-radius: 20px; /* Modern border radius */
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.1), -6px -6px 12px rgba(255, 255, 255, 0.8); /* Neumorphic shadow */
+  padding: 20px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1); /* Slight white background with opacity */
+}
+/* Card Header Styling */
+.card_header {
+  font-weight: bold;
+  font-size: large;
+  color: #fff; /* White color for better readability */
+}
+
+/* Card Text Styling */
+.card_text {
+  text-align: center;
+  color: #ddd; /* Lighter color for card text */
+}
+
+/* Card Hover Effect */
+.service_card:hover {
+  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.15), -8px -8px 16px rgba(255, 255, 255, 0.9); /* Enhanced shadow on hover */
+  transform: translateY(-5px);
+}
+  
+  /* Read More Button Styling */
+.read_more_btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: blue; /* Light background for the button */
+  border: none;
+  border-radius: 20px; /* Matching modern border radius */
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  transition: background 0.3s ease, color 0.3s ease;
+  box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.1), inset -2px -2px 5px rgba(255, 255, 255, 0.9);
+}
+  
+/* Button Hover Effect */
+.read_more_btn:hover {
+  background: rgba(255, 255, 255, 0.7); /* Slightly darker background on hover */
+  color: #0056b3;
+}
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .service_cards {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .service_cards {
+        grid-template-columns: 1fr;
+    }
+  }

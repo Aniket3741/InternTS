@@ -1,0 +1,25 @@
+/* Navbar.css */
+
+.navbar {
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-light .navbar-brand,
+  .navbar-light .nav-link {
+    color: #000;
+  }
+  
+  .navbar-dark .navbar-brand,
+  .navbar-dark .nav-link {
+    color: #fff;
+  }
+  
+  .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .form-check-label {
+    color: inherit; /* Ensure the label color matches the text color */
+  }
+  

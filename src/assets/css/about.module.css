@@ -1,0 +1,142 @@
+/* ABOUT */
+/* Section Styling */
+.aboutHeroSection {
+  padding: 80px 20px;
+  background: #fff;
+  text-align: center;
+}
+
+/* Grid Layout for Content */
+.aboutContainerGridTwoCols {
+  display: flex;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Content Styling */
+.aboutHeroContent {
+  max-width: 700px;
+  text-align: center;
+  margin: 0 auto; /* Center the content */
+}
+
+/* Heading Styling */
+.aboutHeroHeading {
+  font-size: 3rem; /* Larger emphasis on the heading */
+  color: #222;
+  font-weight: 700;
+  margin-bottom: 20px; /* Reduced spacing for better visual balance */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+/* Paragraph Styling */
+.aboutHeroParagraph {
+  color: #444; 
+  display: grid;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 30px; /* Increased space for clarity */
+}
+
+/* Button Group Styling */
+.aboutBtnGroup {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row; /* Arrange buttons in a row */
+  gap: 15px; /* Increased space between buttons */
+  justify-content: center; /* Center buttons horizontally */
+}
+
+/* Primary Button Styling */
+.aboutBtn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.aboutBtn:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Secondary Button Styling */
+.aboutBtnSecondaryBtn {
+  background-color: #6c757d;
+  color: #fff;
+  padding: 14px 28px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.aboutBtnSecondaryBtn:hover {
+  background-color: #5a6268;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Image Styling */
+.aboutHeroImage {
+  text-align: center;
+}
+
+.aboutHeroImage img {
+  width: 100%;
+  height: auto;
+  max-width: 450px;
+  border-radius: 15px; /* More rounded corners for a modern look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for emphasis */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .aboutContainerGridTwoCols {
+    grid-template-columns: 1fr;
+    padding: 0 10px;
+  }
+
+  .aboutBtnGroup {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    gap: 15px;
+  }
+
+  .aboutHeroHeading {
+    font-size: 2.5rem;
+  }
+
+  .aboutHeroParagraph {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutHeroHeading {
+    font-size: 1.8rem;
+  }
+
+  .aboutHeroParagraph {
+    font-size: 0.9rem;
+  }
+
+  .aboutBtn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+
+  .aboutBtnSecondaryBtn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
